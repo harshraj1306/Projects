@@ -1,0 +1,16 @@
+body {
+    /* set margin to 0 and overflow to hidden, to go fullscreen */
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  p{
+    color: gold;
+    font-weight:bold;
+    font-family: verdana;
+    text-align:center;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top: 25px;
+  }

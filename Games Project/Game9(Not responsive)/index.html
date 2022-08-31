@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Good Burger mini game</title>
+</head>
+<body>
+    <div class='game'>
+        <div class='game_inner'>
+          <div class='game_inner__end'>
+            <h1>Time up!</h1>
+            <p>Good Job. You helped Ed make $2000 today.</p>
+          </div>
+          <div class='game_inner__overlay'></div>
+          <div class='game_inner__tutorial'>
+            <h1>Good burger mini game.</h1>
+            <p>Make the customers order by clicking on the ingredients needed.</p>
+            <p>Click on the till when you are ready to serve. Get bonus points for getting the ingredients in the correct order.</p>
+            <button>Begin</button>
+          </div>
+          <div class='game_inner__elements'>
+            <div class='lettuce ingredient'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_lettuce.png'>
+              <div class='tooltip'>
+                Lettuce
+              </div>
+            </div>
+            <div class='tomato ingredient'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_tomato.png'>
+              <div class='tooltip'>
+                Tomato
+              </div>
+            </div>
+            <div class='cheese ingredient'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_cheese.png'>
+              <div class='tooltip'>
+                Cheese
+              </div>
+            </div>
+            <div class='ketchup ingredient'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_ketchup.png'>
+              <div class='tooltip'>
+                Ketchup
+              </div>
+            </div>
+            <div class='mustard ingredient'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_mustard.png'>
+              <div class='tooltip'>
+                Mustard
+              </div>
+            </div>
+            <div class='patty ingredient'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_patty.png'>
+              <div class='tooltip'>
+                Patty
+              </div>
+            </div>
+            <div class='burger'>
+              <img class='top' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_bun_top.png'>
+              <img class='bottom' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_bun_bottom.png'>
+            </div>
+            <div class='restart'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_restart.png'>
+            </div>
+            <div class='till'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_till.png'>
+              <div class='tooltip'>
+                Serve
+              </div>
+            </div>
+            <div class='counter'></div>
+            <div class='ed'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_ed.png'>
+            </div>
+            <div class='car'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_car.png'>
+            </div>
+            <div class='game_inner__result'>
+              Perfect
+            </div>
+          </div>
+          <div class='game_inner__order'>
+            <div class='message'>
+              <p>Welcome to Good Burger!</p>
+              <p>Home of the Good Burger!</p>
+              <p>Can I take your order?</p>
+            </div>
+            <div class='order'></div>
+          </div>
+          <div class='game_inner__ui'>
+            <div class='game_inner__timer'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_timer.png'>
+              <span>90</span>
+            </div>
+            <div class='game_inner__score'>
+              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gb_score.png'>
+              <span>$0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas class='grain'></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="main.js"></script>
+</body>
+</html>

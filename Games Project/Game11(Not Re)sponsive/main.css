@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: white;
+    text-shadow: 0 3px 0 rgba(0,0,0,.4);
+    background: radial-gradient(#333, #000);
+    font: 12px "Press Start 2P";
+    cursor: crosshair;
+}
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Oswald',sans-serif;
+
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #434750;
+}
+
+ul
+{
+    position: relative;
+    transform: skewY(-15deg);
+}
+
+ul li
+{
+    position: relative;
+    list-style: none;
+    width: 200px;
+    background: #3e3f3e;
+    padding: 15px;
+    z-index: var(--i);
+    transition: 0.5s;
+}
+
+ul li:hover
+{
+    background: #33a3ee;
+    transform: translateX(-30px);
+}
+
+ul li::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background:#2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+ul li::before
+{
+    background: #2982b9;
+}
+
+ul li::after
+{
+    content:'';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #35383e;
+    transform: skewX(90deg);
+    transition: 0.5s;
+}
+
+ul li:hover::after
+{
+    background: #2982b9;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+ul li:hover a
+{
+    color: #fff;
+}
+#breakout {
+    cursor: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    overflow: hidden;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, .9);
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+#game {
+    background: linear-gradient(#ff0084, #33001b);
+}
+
+#score,
+#highscore {
+    position: absolute;
+    top: 15px;
+}
+
+    #score {
+        left: 10px;
+    }
+
+    #highscore {
+        right: 10px;
+    }
+
+#lives {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+    #lives span {
+        font-size: 8px;
+    }
+
+.message {
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100px) scale(0);
+    transition: .25s all;
+}
+    .message h2 {
+        font-size: 16px;
+    }
+
+    .gameover.message h2 {
+        font-size: 24px;
+    }
+
+    .start.message {
+      bottom: 300px;
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .message-shown {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
